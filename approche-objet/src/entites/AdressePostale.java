@@ -1,15 +1,12 @@
 package entites;
 
 public class AdressePostale {
-
-	public static void main(String[] args) {
 	
-		int numeroRue;
-		String type;
-		String libelleRue;
-		int CodePostal;
-		String ville;
+		 public int numeroRue;
+		 public String typeVoie;
+		 public String libelleRue;
+		 public int CodePostal;
+		 public String ville;
 
-	}
 
 }

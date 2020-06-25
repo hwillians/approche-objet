@@ -8,5 +8,4 @@ public class AdressePostale {
 		 public int CodePostal;
 		 public String ville;
 
-
 }

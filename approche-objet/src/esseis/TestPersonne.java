@@ -14,6 +14,11 @@ public class TestPersonne {
 		adresse1.CodePostal = 34990;
 		adresse1.ville = "Juvignac";
 		
+		Personne ludoW = new Personne ();
+		ludoW.nom = "Ludovic";
+		ludoW.prenom = "Wallendorff";
+		ludoW.adresse = adresse1;
+		
 		AdressePostale adresse2 = new AdressePostale();
 		adresse2.numeroRue = 2;
 		adresse2.typeVoie = "Rue";
@@ -21,17 +26,11 @@ public class TestPersonne {
 		adresse2.CodePostal = 34000;
 		adresse2.ville = "Montpellier";
 		
-		Personne ludoW = new Personne ();
-		ludoW.nom = "Ludovic";
-		ludoW.prenom = "Wallendorff";
-		ludoW.adresse = adresse1;
-		
 		Personne joseC = new Personne ();
 		joseC.nom = "josé";
 		joseC.prenom = "Colina";
 		joseC.adresse = adresse2;
 		
-
 	}
 
 }

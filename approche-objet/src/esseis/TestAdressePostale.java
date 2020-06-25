@@ -6,7 +6,6 @@ public class TestAdressePostale {
 
 	public static void main(String[] args) {
 		
-		
 		AdressePostale adresse1 = new AdressePostale();
 		adresse1.numeroRue = 240;
 		adresse1.typeVoie = "Rue";

@@ -9,7 +9,7 @@ public class AdressePostale {
 		 public String ville;
 		 
 		public AdressePostale(int numeroRue, String typeVoie, String libelleRue, int codePostal, String ville) {
-			super();
+
 			this.numeroRue = numeroRue;
 			this.typeVoie = typeVoie;
 			this.libelleRue = libelleRue;

@@ -20,8 +20,7 @@ public class AdressePostale {
 
 	@Override
 	public String toString() {
-		return numeroRue + "," + typeVoie + " " + libelleRue
-				+ " " + codePostal + " " + ville ;
+		return numeroRue + "," + typeVoie + " " + libelleRue + " " + codePostal + " " + ville;
 	}
 
 }

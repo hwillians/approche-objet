@@ -14,6 +14,11 @@ public class Compte {
 		this.numeroCompte = numeroCompte;
 		this.soldeCompte = soldeCompte;
 	}
+	
+	@Override
+	public String toString() {
+		return "NumeroCompte= " + numeroCompte + ", solde= " + soldeCompte;
+	}
 
 	public String getNumeroCompte() {
 		return numeroCompte;

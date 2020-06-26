@@ -16,6 +16,20 @@ public class TestPersonne {
 
 		Personne jose = new Personne("José", "Colina", adresse2);
 
+		fulano.afficherIdentite();
+
+		// utiliser le constructeur avec arguments de la classe Personne pour valoriser
+		// les attributs nom et prenom
+		fulano.modifierNom("Luis");
+		fulano.modifierPrenom("Gonzalez");
+		
+
+		// utiliser la méthode qui permet de modifier l’adresse pour valoriser
+		// l’adresse.
+		fulano.modifierAdresse(adresse1);
+		
+		fulano.afficherIdentite();
+
 	}
 
 }

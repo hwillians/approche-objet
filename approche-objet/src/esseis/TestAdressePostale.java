@@ -11,6 +11,7 @@ public class TestAdressePostale {
 
 		AdressePostale adresse2 = new AdressePostale(2, "Rue", "Rue du cheval blanc", 34000, "Montpellier");
 
+		System.out.println(adresse1);
 	}
 
 }

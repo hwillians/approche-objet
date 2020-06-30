@@ -2,8 +2,8 @@ package entites;
 
 public class Personne {
 
-	public String nom;
-	public String prenom;
+	private String nom;
+	private String prenom;
 	public AdressePostale adresse;
 
 	public Personne(String nom, String prenom) {

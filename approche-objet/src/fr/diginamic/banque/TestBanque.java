@@ -1,7 +1,5 @@
 package fr.diginamic.banque;
 
-import java.util.Scanner;
-
 import fr.diginamic.banque.entites.Compte;
 import fr.diginamic.banque.entites.CompteTaux;
 

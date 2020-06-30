@@ -16,7 +16,6 @@ public class TestOperation {
 		operations[3] = new Debit("25/06/2020", 2000.0);
 		int solde = 0;
 		
-
 		for (int i = 0; i < operations.length; i++) {
 			System.out.println(operations[i].getType() + " : " + operations[i] + "\n");
 			if(operations[i].getType().equals("CREDIT")) {
@@ -29,9 +28,7 @@ public class TestOperation {
 			System.out.println("Solde = " + solde);
 			System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- \n");
 			}
-			
-		}
 
 	}
 
-
+}

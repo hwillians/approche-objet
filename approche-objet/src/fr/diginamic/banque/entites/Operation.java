@@ -5,29 +5,29 @@ public abstract class Operation {
 //	ii. le montant de l’opération.
 //	Elle a un constructeur avec 2 arguments : date et montant
 
-	String DateOp;
-	double montant;
+	private String dateOp;
+	private double montant;
+	private double solde;
 
 	public Operation(String dateOp, double montant) {
 		super();
-		DateOp = dateOp;
+		this.dateOp = dateOp;
 		this.montant = montant;
 	}
 
 	public abstract String getType();
-	
+
 	@Override
 	public String toString() {
-		return "Date = " + DateOp + ", montant= " + montant;
+		return "Date = " + dateOp + ", montant= " + montant;
 	}
 
-
 	public String getDateOp() {
-		return DateOp;
+		return dateOp;
 	}
 
 	public void setDateOp(String dateOp) {
-		DateOp = dateOp;
+		this.dateOp = dateOp;
 	}
 
 	public double getMontant() {
@@ -38,4 +38,14 @@ public abstract class Operation {
 		this.montant = montant;
 	}
 
+	public double getSolde() {
+		return solde;
+	}
+
+	public void setSolde(double solde) {
+		this.solde = solde;
+	}
+	
+	
+	
 }

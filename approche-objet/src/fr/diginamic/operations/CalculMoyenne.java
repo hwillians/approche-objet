@@ -2,32 +2,29 @@ package fr.diginamic.operations;
 
 public class CalculMoyenne {
 
-	private double[] tabNombres = null;
-
-	private int k = tabNombres.length;
+	private static double[] tabNombres = new double[10];
 
 	public CalculMoyenne() {
 	}
 
-	public void ajout(double nombre) {
-		double[] tabTemp = new double[k + 1];
-		for (int i = 0; i < tabTemp.length - 1; i++) {
-			tabTemp[i] = tabNombres[i];
+	public static void ajout(double nombre) {
+		for (int i = 0; i < tabNombres.length; i++) {
+			if (tabNombres[i] == 0) {
+				tabNombres[i] = nombre;
+				return;
+			}
 		}
-		
-		tabTemp[tabTemp.length - 1] = nombre;
-		tabNombres = tabTemp;
 	}
 
-
-	
-
-	public double calcul() {
-		double moyen = 0;
-		for (int i = 0; i < k; i++) {
-			moyen += tabNombres[i];
+	public static double calcul() {
+		double somme = 0;
+		double items= 0;
+		for (int i = 0; i < tabNombres.length; i++) {
+			if (tabNombres[i] != 0) {somme += tabNombres[i];
+			items++;
+			}
 		}
-		return moyen;
+		return somme / items;
 	}
 
 	public double[] getTabNombres() {
@@ -38,11 +35,4 @@ public class CalculMoyenne {
 		this.tabNombres = tabNombres;
 	}
 
-	public int getK() {
-		return k;
-	}
-
-	public void setK(int k) {
-		this.k = k;
-	}
 }

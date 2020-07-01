@@ -10,7 +10,6 @@ public abstract class Operation {
 	private double solde;
 
 	public Operation(String dateOp, double montant) {
-		super();
 		this.dateOp = dateOp;
 		this.montant = montant;
 	}

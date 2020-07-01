@@ -1,22 +1,27 @@
-package entites;
+package fr.diginamic.formes;
 
-public class Rectangle {
-	
-	private double longueur;
+public class Rectangle extends Forme{
+
+	protected double longueur;
 	private double largeur;
-
+	
+	
 	public Rectangle(double longueur, double largeur) {
 		super();
 		this.longueur = longueur;
 		this.largeur = largeur;
 	}
 
-	public double perimetre() {
-		return 2 * (longueur + largeur);
+	@Override
+	public double calculerSurface() {
+		// TODO Auto-generated method stub
+		return longueur * largeur;
 	}
 
-	public double surface() {
-		return longueur * largeur;
+	@Override
+	public double calculerPerimetre() {
+	
+		return 2 * (longueur + largeur);
 	}
 
 	public double getLongueur() {
@@ -35,4 +40,5 @@ public class Rectangle {
 		this.largeur = largeur;
 	}
 
+	
 }

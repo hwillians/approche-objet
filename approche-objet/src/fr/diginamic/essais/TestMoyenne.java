@@ -6,17 +6,18 @@ public class TestMoyenne {
 
 	public static void main(String[] args) {
 
-		CalculMoyenne []tab = new CalculMoyenne[1];
+		CalculMoyenne.ajout(10.0);
+		CalculMoyenne.ajout(10.0);
+		CalculMoyenne.ajout(10.0);
+		CalculMoyenne.ajout(10.0);
+		CalculMoyenne.ajout(10.0);
+		CalculMoyenne.ajout(10.0);
+		CalculMoyenne.ajout(10.0);
+		CalculMoyenne.ajout(10.0);
 		
-		int i = tab.length;
-
-		System.out.println(i);
+		System.out.print(CalculMoyenne.calcul());
 		
-		tab[i-1].ajout(5);
 		
-		System.out.println(i-1);
-	
-		System.out.println(tab[tab.length].calcul());
 
 	}
 

@@ -32,16 +32,24 @@ public class Maison {
 		}
 		return superficie;
 	}
-	
+
 	public static double getsSuperficieParPiece(String typePiece) {
-		double superficie=0;
-		 for (int i = 0; i < tabMaison.length; i++) {
-		if (tabMaison[i] != null && tabMaison[i].getType().equals(typePiece) &&
-		 tabMaison[i].superficie > 0) {
-		 superficie += tabMaison[i].superficie;
-		 }
-		 }
+		double superficie = 0;
+		for (int i = 0; i < tabMaison.length; i++) {
+			if (tabMaison[i] != null && tabMaison[i].getType().equals(typePiece) && tabMaison[i].superficie > 0) {
+				superficie += tabMaison[i].superficie;
+			}
+		}
 		return superficie;
 	}
 
+	public static double getsNombreDePiece(String typePiece) {
+		double item = 0;
+		for (int i = 0; i < tabMaison.length; i++) {
+			if (tabMaison[i] != null && tabMaison[i].getType().equals(typePiece) && tabMaison[i].superficie > 0) {
+				item++;
+			}
+		}
+		return item;
+	}
 }

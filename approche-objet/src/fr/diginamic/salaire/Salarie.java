@@ -25,7 +25,8 @@ public class Salarie extends Intervenant {
 
 	@Override
 	public void afficherDonnes() {
-		System.out.println("Prenom= " + getPrenom() + ", Nom= " + getNom() +  ", Salaire= " + getSalaire() + "€, statut= Salarié");
+		System.out.println(
+				"Prenom= " + getPrenom() + ", Nom= " + getNom() + ", Salaire= " + getSalaire() + "€, statut= Salarié");
 
 	}
 

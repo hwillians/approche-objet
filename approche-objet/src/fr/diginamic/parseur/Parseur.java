@@ -14,10 +14,8 @@ public class Parseur {
 			c = '/';
 		}
 
-		return new Expression(chaine.substring(0, chaine.indexOf(c)), c, chaine.substring(chaine.indexOf(c)+1));
+		return new Expression(chaine.substring(0, chaine.indexOf(c)), c, chaine.substring(chaine.indexOf(c) + 1));
 
-		
-		
 	}
 
 }

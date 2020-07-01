@@ -22,12 +22,11 @@ public class TestPersonne {
 		// les attributs nom et prenom
 		fulano.modifierNom("Luis");
 		fulano.modifierPrenom("Gonzalez");
-		
 
 		// utiliser la méthode qui permet de modifier l’adresse pour valoriser
 		// l’adresse.
 		fulano.modifierAdresse(adresse1);
-		
+
 		fulano.afficherIdentite();
 
 	}

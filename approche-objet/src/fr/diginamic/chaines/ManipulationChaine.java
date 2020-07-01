@@ -16,12 +16,11 @@ public class ManipulationChaine {
 		System.out.println(chaine.substring(0, chaine.indexOf(';')).toUpperCase());
 
 		String[] morceaux = chaine.split(";");
-		
-		
-		for (int i =0; i < morceaux.length ; i++) {
-			System.out.print(morceaux[i]+" ");
-			
+
+		for (int i = 0; i < morceaux.length; i++) {
+			System.out.print(morceaux[i] + " ");
+
 		}
-	
+
 	}
 }

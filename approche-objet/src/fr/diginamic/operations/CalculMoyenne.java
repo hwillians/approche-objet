@@ -18,10 +18,11 @@ public class CalculMoyenne {
 
 	public static double calcul() {
 		double somme = 0;
-		double items= 0;
+		double items = 0;
 		for (int i = 0; i < tabNombres.length; i++) {
-			if (tabNombres[i] != 0) {somme += tabNombres[i];
-			items++;
+			if (tabNombres[i] != 0) {
+				somme += tabNombres[i];
+				items++;
 			}
 		}
 		return somme / items;

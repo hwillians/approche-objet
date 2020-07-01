@@ -14,10 +14,8 @@ public class TestMoyenne {
 		CalculMoyenne.ajout(10.0);
 		CalculMoyenne.ajout(10.0);
 		CalculMoyenne.ajout(10.0);
-		
+
 		System.out.print(CalculMoyenne.calcul());
-		
-		
 
 	}
 

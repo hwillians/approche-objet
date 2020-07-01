@@ -15,19 +15,18 @@ public class TestOperation {
 		operations[2] = new Credit("25/06/2020", 4000.0);
 		operations[3] = new Debit("25/06/2020", 2000.0);
 		int solde = 0;
-		
+
 		for (int i = 0; i < operations.length; i++) {
 			System.out.println(operations[i].getType() + " : " + operations[i] + "\n");
-			if(operations[i].getType().equals("CREDIT")) {
+			if (operations[i].getType().equals("CREDIT")) {
 				solde += operations[i].getMontant();
-			}else if (operations[i].getType().equals("DEBIT")){
+			} else if (operations[i].getType().equals("DEBIT")) {
 				solde -= operations[i].getMontant();
 			}
 
-			
 			System.out.println("Solde = " + solde);
 			System.out.println("-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- \n");
-			}
+		}
 
 	}
 

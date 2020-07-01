@@ -13,7 +13,7 @@ public class Testcercle {
 		tabCercles[1] = CercleFactory.creerCercle(25);
 
 		for (int i = 0; i < tabCercles.length; i++) {
-			System.out.println("Cercle "+(i+1)+" rayon= " + tabCercles[i].getRayon() + " : Perimètre = "
+			System.out.println("Cercle " + (i + 1) + " rayon= " + tabCercles[i].getRayon() + " : Perimètre = "
 					+ tabCercles[i].perimetre() + ", surface est = " + tabCercles[i].surface());
 		}
 

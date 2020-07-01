@@ -44,7 +44,5 @@ public abstract class Operation {
 	public void setSolde(double solde) {
 		this.solde = solde;
 	}
-	
-	
-	
+
 }

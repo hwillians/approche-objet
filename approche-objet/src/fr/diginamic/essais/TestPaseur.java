@@ -13,7 +13,6 @@ public class TestPaseur {
 		System.out.println(resultat);
 		System.out.println(expr);
 
-		
 	}
 
 }

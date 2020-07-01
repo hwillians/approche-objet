@@ -15,40 +15,42 @@ public class Expression {
 	public double evaluer(String variable, double valeur) {
 
 		double resultat = 0;
-		
+
 		if (variable.equals(this.membre1)) {
-			
-			switch (this.operateur){
-			case ('+') : 
+
+			switch (this.operateur) {
+			case ('+'):
 				resultat = valeur + Double.parseDouble(getMembre2());
-			break;
-			case ('-') : 
+				break;
+			case ('-'):
 				resultat = valeur - Double.parseDouble(getMembre2());
-			break;
-			case ('*') : 
+				break;
+			case ('*'):
 				resultat = valeur * Double.parseDouble(getMembre2());
-			break;
-			case ('/') : 
+				break;
+			case ('/'):
 				resultat = valeur / Double.parseDouble(getMembre2());
-			break;
+				break;
 			}
-			
-		}else if (variable.equals(this.membre2)){
-			switch (this.operateur){
-			case ('+') : 
+
+		} else if (variable.equals(this.membre2)) {
+			switch (this.operateur) {
+			case ('+'):
 				resultat = valeur + Double.parseDouble(getMembre1());
-			break;
-			case ('-') : 
+				break;
+			case ('-'):
 				resultat = valeur - Double.parseDouble(getMembre1());
-			break;
-			case ('*') : 
+				break;
+			case ('*'):
 				resultat = valeur * Double.parseDouble(getMembre1());
-			break;
-			case ('/') : 
+				break;
+			case ('/'):
 				resultat = valeur / Double.parseDouble(getMembre1());
-			break;
+				break;
 			}
-		}else {System.out.println("Verifiez les variables (Attention aux majuscules)");}
+		} else {
+			System.out.println("Verifiez les variables (Attention aux majuscules)");
+		}
 
 		return resultat;
 	}

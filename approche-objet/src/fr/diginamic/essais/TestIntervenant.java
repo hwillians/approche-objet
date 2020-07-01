@@ -15,7 +15,7 @@ public class TestIntervenant {
 
 		salarie1.afficherDonnes();
 		pigiste1.afficherDonnes();
-		
+
 	}
 
 }

@@ -1,5 +1,5 @@
 
-package esseis;
+package fr.diginamic.essais;
 
 import entites.AdressePostale;
 

@@ -11,14 +11,18 @@ public class Ville implements Comparable<Ville> {
 	}
 
 	public int compareTo(Ville autre) {
-		// return this.nom.compareTo(autre.getNom()); (pour les nom)
-		if (this.nbHabitants > autre.getNbHabitants()) {
-			return 1;
-		}
-		if (this.nbHabitants < autre.getNbHabitants()) {
-			return -1;
-		}
-		return 0;
+		/*
+		 * (pour les nom) return this.nom.compareTo(autre.getNom());
+		 */
+
+		// if (this.nbHabitants > autre.getNbHabitants()) {
+		// return 1;
+		// }
+		// if (this.nbHabitants < autre.getNbHabitants()) {
+		// return -1;
+		// }
+		// return 0;
+		return this.nbHabitants - autre.getNbHabitants();
 	}
 
 	public String getNom() {

@@ -32,15 +32,15 @@ public class TestListeInt {
 
 		System.out.println(max);
 		System.out.println(" \n--------------- ");
-		Integer min = 0;
+		Integer ref = liste.get(0);
 
 		for (int i = 0; i < liste.size(); i++) {
-			if (liste.get(i) < min) {
-				min = liste.get(i);
+			if (liste.get(i) < ref) {
+				ref = liste.get(i);
 			}
 		}
 
-		liste.remove(min);
+		liste.remove(ref);
 
 		for (int i = 0; i < liste.size(); i++) {
 			System.out.print(liste.get(i) + " ");

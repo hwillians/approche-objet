@@ -10,17 +10,25 @@ public class TrierVilles {
 		ArrayList<Ville> villesTries = new ArrayList<>();
 
 		for (int i = 0; i < villes.size(); i++) {
-			if (villes.get(i).getCodeDep().equals("34")) {
-				villesTries.add(villes.get(i));
+			Ville v = villes.get(i);
+			
+			if (type.equals("Département") && v.getCodeDep().equals(valeur)) {
+				villesTries.add(v);
 
-			} else if (villes.get(i).getCodeRegion().equals("34")) {
-				villesTries.add(villes.get(i));
+			} else 
+			if (type.equals("Region") && villes.get(i).getCodeRegion().equals(valeur)) {
+			villesTries.add(villes.get(i));
 			}
 
-		}
+	}
 
 		return villesTries;
 
 	}
 
 }
+//for (Ville v : villes) {
+//	if (v.getCodeRegion().equals("76")) {
+//		villesTriesReg.add(v);
+//	}
+//}

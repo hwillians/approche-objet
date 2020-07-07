@@ -38,6 +38,13 @@ public class Application {
 				Ville ville = SeparateurChaines.separateur(lignes.get(i));
 				villes.add(ville);
 			}
+			
+			ArrayList<Ville> villes2 = TrierVilles.trier(villes, "Département", "34");
+			for( Ville v : villes2){
+			System.out.println(v);	
+			}
+			System.out.println(villes2.size());
+			
 
 			// Affiche les donnes d'un ville
 			AfficherElement.affiche(villes, "Montpellier");
@@ -50,31 +57,19 @@ public class Application {
 
 		
 			// Affiche les 10 plus grandes villes du département
-			LesDixPlus.grandesVilles(villes, "Département","33");
+			LesDixPlus.grandesVilles(villes, "Département","34");
 			
 			// Affiche les 10 plus petites villes du département
 			LesDixPlus.petitesVilles(villes, "Département","34");
-			
-			// Affiche la population de toute la région Occitanie
+//			
+//			// Affiche la population de toute la région Occitanie
 			PopTotale.affiche(villes, "Region","76");
-			
+//			
 //			// Affichez les 10 villes les plus importantes de la région Occitanie
 			LesDixPlus.grandesVilles(villes, "Region","76");
-			
+//			
+//			-----------------------------
 //
-//			ArrayList<Ville> villesTriesReg = new ArrayList<>();
-//
-//			for (Ville v : villes) {
-//				if (v.getCodeRegion().equals("76")) {
-//					villesTriesReg.add(v);
-//				}
-//			}
-//
-//			Collections.sort(villesTriesReg, new ComparateurVille());
-//
-//			for (int i = 0; i < 10; i++) {
-//				System.out.println(i + 1 + "._ " + villesTries.get(i) + "\n");
-//			}
 //
 //			// Affichez le département le plus peuplé de la région Occitanie
 //			HashMap<String, Integer> map = new HashMap<>();
@@ -90,22 +85,7 @@ public class Application {
 //				}
 //			}
 //
-//			ref = 0;
-//			keyRef = "";
-//
-//			Iterator<String> ite2 = map.keySet().iterator();
-//
-//			while (ite2.hasNext()) {
-//				String k = ite2.next();
-//				if (map.get(k) > ref) {
-//					ref = map.get(k);
-//					keyRef = k;
-//				}
-//			}
-//
-//			System.out.println("Le département le plus peuplé de la région est le : " + keyRef + " avec "
-//					+ map.get(keyRef) + " Habitantes");
-//
+//			
 //			// Affichez les 10 régions les plus peuplées de France
 //			
 //			// Affichez les 10 département les plus peuplés de France

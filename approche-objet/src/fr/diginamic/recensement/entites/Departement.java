@@ -1,11 +1,13 @@
 package fr.diginamic.recensement.entites;
 
-public class Departement implements Categorie {
+public class Departement extends Categorie {
 
-	@Override
-	public int getPopulation() {
-		// TODO Auto-generated method stub
-		return 0;
+	public Departement(String nom, int population) {
+		super(nom, population);
+		// TODO Auto-generated constructor stub
 	}
+
+	
+
 
 }

@@ -6,11 +6,11 @@ import java.util.Iterator;
 
 import fr.diginamic.recensement.entites.Ville;
 
-public class LaPlusPeitieVille {
+public class LaPlusPetiteVille {
 	
 	public static void affiche(ArrayList<Ville> villes, String type, String dep) {
 		
-		HashMap<String, Integer> map = CreerMap.genererMap(villes, type ,dep);
+		HashMap<String, Integer> map = CreerMap.commune(villes, type ,dep);
 		
 		int ref = 1000000000;
 		String keyRef = "";

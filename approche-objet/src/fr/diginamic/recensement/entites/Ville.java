@@ -1,6 +1,6 @@
 package fr.diginamic.recensement.entites;
 
-public class Ville implements Categorie {
+public class Ville extends Categorie {
 
 	// code région
 	private String codeRegion;
@@ -12,19 +12,24 @@ public class Ville implements Categorie {
 	private String codeCommune;
 	// nom de la commune
 	private String commune;
-	// population totale
+	
 	private int population;
+	
+
 
 	/**
+	 * @param nom
+	 * @param population
 	 * @param codeRegion
 	 * @param region
 	 * @param codeDep
 	 * @param codeCommune
 	 * @param commune
-	 * @param population
+	 * @param population2
 	 */
-	public Ville(String codeRegion, String region, String codeDep, String codeCommune, String commune, int population) {
-	
+	public Ville(String codeRegion, String region, String codeDep, String codeCommune,
+			String commune, int population) {
+		super(commune, population);
 		this.codeRegion = codeRegion;
 		this.region = region;
 		this.codeDep = codeDep;
@@ -33,13 +38,17 @@ public class Ville implements Categorie {
 		this.population = population;
 	}
 
+
 	
-	
+
+
 	@Override
 	public String toString() {
-		return "Commune= " + commune + "code de Region= " + codeRegion + ", Region= " + region + ", code du Departement= " + codeDep + ", code De commune="
-				+ codeCommune +  ", population=" + population;
+		return "codeRegion=" + codeRegion + ", region=" + region + ", codeDep=" + codeDep + ", codeCommune="
+				+ codeCommune + ", commune=" + commune + ", population=" + population ;
 	}
+
+
 
 
 
@@ -50,12 +59,14 @@ public class Ville implements Categorie {
 		return codeRegion;
 	}
 
+
 	/**
 	 * @param codeRegion the codeRegion to set
 	 */
 	public void setCodeRegion(String codeRegion) {
 		this.codeRegion = codeRegion;
 	}
+
 
 	/**
 	 * @return the region
@@ -64,12 +75,14 @@ public class Ville implements Categorie {
 		return region;
 	}
 
+
 	/**
 	 * @param region the region to set
 	 */
 	public void setRegion(String region) {
 		this.region = region;
 	}
+
 
 	/**
 	 * @return the codeDep
@@ -78,12 +91,14 @@ public class Ville implements Categorie {
 		return codeDep;
 	}
 
+
 	/**
 	 * @param codeDep the codeDep to set
 	 */
 	public void setCodeDep(String codeDep) {
 		this.codeDep = codeDep;
 	}
+
 
 	/**
 	 * @return the codeCommune
@@ -92,12 +107,14 @@ public class Ville implements Categorie {
 		return codeCommune;
 	}
 
+
 	/**
 	 * @param codeCommune the codeCommune to set
 	 */
 	public void setCodeCommune(String codeCommune) {
 		this.codeCommune = codeCommune;
 	}
+
 
 	/**
 	 * @return the commune
@@ -106,12 +123,14 @@ public class Ville implements Categorie {
 		return commune;
 	}
 
+
 	/**
 	 * @param commune the commune to set
 	 */
 	public void setCommune(String commune) {
 		this.commune = commune;
 	}
+
 
 	/**
 	 * @return the population
@@ -120,11 +139,15 @@ public class Ville implements Categorie {
 		return population;
 	}
 
+
 	/**
 	 * @param population the population to set
 	 */
 	public void setPopulation(int population) {
 		this.population = population;
 	}
+
+
+
 
 }

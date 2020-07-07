@@ -2,9 +2,10 @@ package fr.diginamic.recensement;
 
 import java.util.Comparator;
 
-import fr.diginamic.recensement.entites.Ville;
+import fr.diginamic.recensement.entites.Categorie;
 
-public class ComparateurVille implements Comparator<Ville> {
+
+public class ComparateurVille implements Comparator<Categorie> {
 
 	private boolean b ;
 
@@ -18,7 +19,7 @@ public class ComparateurVille implements Comparator<Ville> {
 	}
 
 	@Override
-	public int compare(Ville o1, Ville o2) {
+	public int compare(Categorie o1, Categorie o2) {
 		if (b) {
 			if (o1.getPopulation() < o2.getPopulation()) {
 				return 1;
@@ -39,6 +40,8 @@ public class ComparateurVille implements Comparator<Ville> {
 				return 0;
 			}
 	}
+
+	
 
 	
 

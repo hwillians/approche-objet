@@ -1,11 +1,12 @@
 package fr.diginamic.recensement.entites;
 
-public class Region implements Categorie {
+public class Region extends Categorie {
 
-	@Override
-	public int getPopulation() {
-		// TODO Auto-generated method stub
-		return 0;
+	public Region(String nom, int population) {
+		super(nom, population);
+	
 	}
+
+	
 
 }
